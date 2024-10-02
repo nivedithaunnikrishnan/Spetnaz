@@ -8,7 +8,7 @@ git 'https://github.com/abiya1999/Spetnaz.git'
 }
 stage('Build') {
 steps {
-sh './build.sh' // For Java: mvn clean package
+sh 'mvn -e clean package' // For Java: mvn clean package
 }
 }
 stage('Test') {
